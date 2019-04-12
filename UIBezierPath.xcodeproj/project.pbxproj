@@ -13,6 +13,9 @@
 		50CC4CBE2041EB700063F51A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CC4CBD2041EB700063F51A /* Assets.xcassets */; };
 		50CC4CC12041EB700063F51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50CC4CBF2041EB700063F51A /* LaunchScreen.storyboard */; };
 		50CC4CC42041EB700063F51A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CC4CC32041EB700063F51A /* main.m */; };
+		50CC4CD62041EC1C0063F51A /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CC4CD52041EC1C0063F51A /* LineView.m */; };
+		50CC4CDC2041EF080063F51A /* CurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CC4CDB2041EF080063F51A /* CurveView.m */; };
+		50CC4CDF2041F3180063F51A /* ArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50CC4CDE2041F3180063F51A /* ArcView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		50CC4CC02041EB700063F51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50CC4CC22041EB700063F51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50CC4CC32041EB700063F51A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50CC4CD42041EC1C0063F51A /* LineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		50CC4CD52041EC1C0063F51A /* LineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		50CC4CDA2041EF080063F51A /* CurveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurveView.h; sourceTree = "<group>"; };
+		50CC4CDB2041EF080063F51A /* CurveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurveView.m; sourceTree = "<group>"; };
+		50CC4CDD2041F3180063F51A /* ArcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcView.h; sourceTree = "<group>"; };
+		50CC4CDE2041F3180063F51A /* ArcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,10 @@
 		50CC4CB32041EB700063F51A /* UIBezierPath */ = {
 			isa = PBXGroup;
 			children = (
+				50CC4CD82041EEF70063F51A /* 画弧 */,
+				50CC4CD92041EEF70063F51A /* 画弧练习 */,
+				50CC4CD72041EEF70063F51A /* 画曲线 */,
+				50CC4CD32041EC080063F51A /* 画线 */,
 				50CC4CB42041EB700063F51A /* AppDelegate.h */,
 				50CC4CB52041EB700063F51A /* AppDelegate.m */,
 				50CC4CB72041EB700063F51A /* ViewController.h */,
@@ -69,6 +82,40 @@
 				50CC4CC32041EB700063F51A /* main.m */,
 			);
 			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		50CC4CD32041EC080063F51A /* 画线 */ = {
+			isa = PBXGroup;
+			children = (
+				50CC4CD42041EC1C0063F51A /* LineView.h */,
+				50CC4CD52041EC1C0063F51A /* LineView.m */,
+			);
+			path = "画线";
+			sourceTree = "<group>";
+		};
+		50CC4CD72041EEF70063F51A /* 画曲线 */ = {
+			isa = PBXGroup;
+			children = (
+				50CC4CDA2041EF080063F51A /* CurveView.h */,
+				50CC4CDB2041EF080063F51A /* CurveView.m */,
+			);
+			path = "画曲线";
+			sourceTree = "<group>";
+		};
+		50CC4CD82041EEF70063F51A /* 画弧 */ = {
+			isa = PBXGroup;
+			children = (
+				50CC4CDD2041F3180063F51A /* ArcView.h */,
+				50CC4CDE2041F3180063F51A /* ArcView.m */,
+			);
+			path = "画弧";
+			sourceTree = "<group>";
+		};
+		50CC4CD92041EEF70063F51A /* 画弧练习 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "画弧练习";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CC4CD62041EC1C0063F51A /* LineView.m in Sources */,
 				50CC4CB92041EB700063F51A /* ViewController.m in Sources */,
+				50CC4CDC2041EF080063F51A /* CurveView.m in Sources */,
 				50CC4CC42041EB700063F51A /* main.m in Sources */,
 				50CC4CB62041EB700063F51A /* AppDelegate.m in Sources */,
+				50CC4CDF2041F3180063F51A /* ArcView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
